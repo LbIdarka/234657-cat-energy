@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Николаенко](https://up.htmlacademy.ru/adaptive/13/user/234657).
-* Наставник: [Юлия Бухвалова] (https://htmlacademy.ru/profile/id114660).
+* Наставник: [Юлия Бухвалова](https://htmlacademy.ru/profile/id114660).
 
 ---
 
