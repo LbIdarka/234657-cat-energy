@@ -33,18 +33,18 @@
     <p class="page-main__desc">Заполните анкету и мы подберем  программу питания для вашего кота</p>
 
     <form class="page-main__form  form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form__section">
-        <h3 class="form__subtitle">Данные кота</h3>
+      <fieldset class="form__section">
+        <legend class="form__subtitle  visually-hidden">Данные кота</legend>
         <label for="name">Имя:*</label>
-        <input type="text" name="name" id="name" placeholder="Барсик">
+        <input type="text" name="name" id="name" placeholder="Барсик" required>
         <label for="weight">Вес (кг):*</label>
-        <input type="tel" name="weight" id="weight" placeholder="7">
+        <input type="number" name="weight" id="weight" placeholder="7" required>
         <label for="age">Возраст (лет):</label>
-        <input type="tel" name="age" id="age" placeholder="7">
-      </div>
+        <input type="number" name="age" id="age" placeholder="7">
+      </fieldset>
 
-      <div class="form__section">
-        <h3 class="form__subtitle">Выбор программы</h3>
+      <fieldset class="form__section">
+        <legend class="form__subtitle  visually-hidden">Выбор программы</legend>
         <ul class="form__list">
           <li class="form__item">
             <input type="radio" name="program" id="slim" checked>
@@ -59,29 +59,29 @@
             <label for="advice">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
-      </div>
+      </fieldset>
 
-      <div class="form__section">
-        <h3 class="form__subtitle">Контактные данные (владельца кота)</h3>
+      <fieldset class="form__section">
+        <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__item">
               <label for="email">E-mail:*</label>
-              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="form__item">
               <label for="tel">Телефон:*</label>
-              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
-      </div>
+      </fieldset>
 
-      <div class="form__section">
-        <h3 class="form__subtitle">Комментарий</h3>
+      <fieldset class="form__section">
+        <legend class="form__subtitle">Комментарий</legend>
         <textarea name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </div>
+      </fieldset>
 
-      <div class="form__section">
-        <h3 class="form__subtitle">Дополнительно</h3>
+      <fieldset class="form__section">
+        <legend class="form__subtitle">Дополнительно</legend>
         <ul class="form__list">
           <li class="form__item">
             <input type="checkbox" name="sweetener" id="sweetener" checked>
@@ -100,7 +100,7 @@
             <label for="vitamins">Витамины</label>
           </li>
         </ul>
-      </div>
+      </fieldset>
 
       <button class="form__btn  btn" type="submit">Отправить заявку</button>
       <small class="form__note">
