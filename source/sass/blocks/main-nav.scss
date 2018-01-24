@@ -1,0 +1,14 @@
+.main-nav {
+  min-height: 198px;
+  outline: $outline-block;
+}
+
+.main-nav__link {
+  font-family: $font-head;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $color-title;
+  text-decoration: none;
+  text-transform: uppercase;
+}
