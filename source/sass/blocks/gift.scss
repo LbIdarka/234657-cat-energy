@@ -1,0 +1,13 @@
+.gift {
+  min-height: 289px;
+  color: #ffffff;
+  background-color: $primary-bg-color;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.gift__text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+}

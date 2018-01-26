@@ -1,0 +1,27 @@
+.catalog {
+  min-height: 1647px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item__detals {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  color: inherit;
+}
+
+.catalog-item__title {
+  font-family: $font-head;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+

@@ -1,10 +1,18 @@
 .btn {
+  display: block;
   padding: 10px;
   font-family: $font-head;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: $primary-bg-color;
+
+  &--more {
+    color: #222222;
+    background-color: $secondary-bg-color;
+  }
 }
