@@ -1,0 +1,28 @@
+.programs {
+  min-height: 505px;
+  margin-top: 22px;
+}
+
+.programs__item {
+  padding: 22px 20px;
+  background-color: $secondary-bg-color;
+}
+
+.programs__title {
+  @include section-subtitle ();
+  text-transform: uppercase;
+}
+
+.programs__desc {
+  font: inherit;
+}
+
+.programs__link {
+  font-family: $font-head;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-title;
+  text-transform: uppercase;
+  text-decoration: none;
+}

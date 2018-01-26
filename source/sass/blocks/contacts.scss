@@ -1,0 +1,26 @@
+.contacts {
+  min-height: 115px;
+  padding-top: 28px;
+
+  &--bg {
+    background-color: #ffffff;
+  }
+}
+
+.contacts__text {
+  font-family: $font-head;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.contacts_map {
+  min-height: 363px;
+  margin-top: 28px;
+}
+
+.contacts__adress {
+  font: inherit;
+}

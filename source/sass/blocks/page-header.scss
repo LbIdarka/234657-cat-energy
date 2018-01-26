@@ -1,6 +1,6 @@
 .page-header {
-  outline: $outline-grid;
   min-height: 264px;
+  @include container ();
 }
 
 .page-header__logo {

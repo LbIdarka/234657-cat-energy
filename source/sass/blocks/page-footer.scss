@@ -1,0 +1,10 @@
+.page-footer {
+  @include container ();
+  min-height: 714px;
+  background-color: $secondary-bg-color;
+}
+
+.page-footer__logo {
+  display: block;
+  min-height: 95px;
+}

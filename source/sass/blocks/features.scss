@@ -1,0 +1,18 @@
+.features {
+  min-height: 406px;
+  margin-top: 23px;
+}
+
+.features__title {
+  @include section-title ();
+  margin: 0;
+}
+
+.features__list {
+  margin: 0;
+  margin-top: 22px;
+}
+
+.features__item {
+  font: inherit;
+}

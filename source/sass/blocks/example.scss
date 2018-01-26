@@ -1,0 +1,45 @@
+.example {
+  min-height: 705px;
+  margin-top: 42px;
+  background-color: $secondary-bg-color;
+}
+
+.example__title {
+  @include section-title();
+}
+
+.example__text {
+  font: inherit;
+}
+
+.example-item__data {
+  @include section-subtitle();
+  font-family: $font-head;
+  text-transform: uppercase;
+}
+
+.example-item__label {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.example__total {
+  font-family: $font-head;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.slider_controls {
+  font-family: $font-head;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-title;
+  text-transform: uppercase;
+}
