@@ -1,6 +1,6 @@
 .page-header {
-  min-height: 264px;
   @include container ();
+  min-height: 264px;
 }
 
 .page-header__logo {

@@ -40,9 +40,9 @@ img {
 @font-face {
   font-family: "Oswald";
   src: local("Oswald Medium"),
-        local("Oswaldmedium"),
-        url("../source/fonts/oswaldmedium.woff2") format("woff2"),
-        url("../source/fonts/oswaldmedium.woff") format("woff");
+    local("Oswaldmedium"),
+    url("../source/fonts/oswaldmedium.woff2") format("woff2"),
+    url("../source/fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -50,9 +50,9 @@ img {
 @font-face {
   font-family: "Oswald";
   src: local("Oswald Regular"),
-        local("Oswaldregular"),
-        url("../source/fonts/oswaldregular.woff2") format("woff2"),
-        url("../source/fonts/oswaldregular.woff") format("woff");
+    local("Oswaldregular"),
+    url("../source/fonts/oswaldregular.woff2") format("woff2"),
+    url("../source/fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
