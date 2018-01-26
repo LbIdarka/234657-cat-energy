@@ -1,0 +1,18 @@
+@mixin section-title () {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $color-title;
+}
+
+@mixin section-subtitle () {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-title;
+}
+
+@mixin container () {
+  width: auto;
+  padding: 0 20px;
+}
