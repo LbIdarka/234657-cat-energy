@@ -1,6 +1,5 @@
 .page-main {
   min-height: 2206px;
-  @include container ();
 }
 
 .page-main__title {
@@ -9,4 +8,24 @@
   margin-top: 18px;
   font-family: $font-head;
   font-stretch: condensed;
+}
+
+.page-main__header {
+  @include container ();
+}
+
+.page-main__desc {
+  margin: 0;
+  margin-top: 15px;
+  font-family: $font-head;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-stretch: condensed;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.page-main__form {
+  margin-top: 35px;
 }
