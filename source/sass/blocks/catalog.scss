@@ -9,7 +9,6 @@
 }
 
 .catalog-item__detals {
-  font-family: inherit;
   font-size: 12px;
   line-height: 16px;
   color: inherit;
@@ -22,4 +21,9 @@
   font-weight: 400;
   color: $color-title;
   text-transform: uppercase;
+}
+
+.catalog-item__text {
+  font-size: 12px;
+  line-height: 16px;
 }
