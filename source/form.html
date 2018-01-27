@@ -67,11 +67,11 @@
       <fieldset class="form__section">
         <legend class="form__subtitle  visually-hidden">Данные кота</legend>
         <label for="name">Имя:*</label>
-        <input type="text" name="name" id="name" placeholder="Барсик" required>
+        <input class="form__data" type="text" name="name" id="name" placeholder="Барсик" required>
         <label for="weight">Вес (кг):*</label>
-        <input type="number" name="weight" id="weight" placeholder="7" required>
+        <input class="form__data" type="number" name="weight" id="weight" placeholder="7" required>
         <label for="age">Возраст (лет):</label>
-        <input type="number" name="age" id="age" placeholder="7">
+        <input class="form__data" type="number" name="age" id="age" placeholder="7">
       </fieldset>
 
       <fieldset class="form__section">
@@ -97,18 +97,18 @@
           <ul class="form__list">
             <li class="form__item">
               <label for="email">E-mail:*</label>
-              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <input class="form__data" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="form__item">
               <label for="tel">Телефон:*</label>
-              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="form__data" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
       </fieldset>
 
       <fieldset class="form__section">
         <legend class="form__subtitle">Комментарий</legend>
-        <textarea name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__data" name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__section">
