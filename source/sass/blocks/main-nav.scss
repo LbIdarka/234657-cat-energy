@@ -2,6 +2,25 @@
   min-height: 198px;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  width: auto;
+  padding: 21px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .main-nav__link {
   font-family: $font-head;
   font-size: 20px;
