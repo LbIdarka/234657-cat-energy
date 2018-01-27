@@ -1,3 +1,7 @@
 .slider {
   min-height: 365px;
 }
+
+.slider__slide:last-child {
+  display: none;
+}

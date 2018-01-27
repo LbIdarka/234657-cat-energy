@@ -7,7 +7,12 @@
   }
 }
 
+.contacts__wrapper {
+  @include container;
+}
+
 .contacts__text {
+  margin: 0;
   font-family: $font-head;
   font-size: 16px;
   line-height: 20px;
@@ -22,5 +27,7 @@
 }
 
 .contacts__adress {
+  margin: 0;
   font: inherit;
+  line-height: 20px;
 }
