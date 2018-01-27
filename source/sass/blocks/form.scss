@@ -17,7 +17,12 @@
   @include section-subtitle ();
 }
 
-.form__data {
+.form__input {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.form__textarea {
   font: inherit;
   text-transform: uppercase;
 }
