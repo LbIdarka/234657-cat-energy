@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Pixel Glass -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Pixel Glass -->
   <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/preview/catalog-mob.jpg");
+    }
+
+    /* Планшет */
+
+    @media ( min-width: 760px) {
       HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "img/preview/catalog-mob.jpg" );
+        /* Планшетный макет */
+        background-image: url("img/760.png");
       }
-      /* Планшет */
-      @media ( min-width: 760px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/760.png" );
-        }
+    }
+
+    /* Десктоп */
+
+    @media ( min-width: 960px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/960.png");
       }
-      /* Десктоп */
-      @media ( min-width: 960px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/960.png" );
-        }
-      }
-    </style>
-    <link href="img/preview/pixel-glass/styles.css" rel="stylesheet">
-    <script src="img/preview/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
-  </head>
-  </head>
-  <body>
+    }
+  </style>
+  <link href="img/preview/pixel-glass/styles.css" rel="stylesheet">
+  <script src="img/preview/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+</head>
+
+<body>
 
   <header class="page-header">
     <a href="index.html" class="page-header__logo">
@@ -66,7 +71,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  PRO 500 г</caption>
+            <caption class="catalog-item__title">Cat Energy PRO 500 г</caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -88,7 +93,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  PRO 1000 г</caption>
+            <caption class="catalog-item__title">Cat Energy PRO 1000 г</caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -110,7 +115,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  PRO 500 г</caption>
+            <caption class="catalog-item__title">Cat Energy PRO 500 г</caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -132,7 +137,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  PRO 1000 г</caption>
+            <caption class="catalog-item__title">Cat Energy PRO 1000 г</caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -154,7 +159,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  Slim 500 г</caption>
+            <caption class="catalog-item__title">Cat Energy Slim 500 г</caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -176,7 +181,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  Slim 1000 г</caption>
+            <caption class="catalog-item__title">Cat Energy Slim 1000 г</caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -198,7 +203,7 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy  Slim 500 г</caption>
+            <caption class="catalog-item__title">Cat Energy Slim 500 г</caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -283,7 +288,7 @@
     <section class="page-footer__contacts  contacts">
       <h3 class="visually-hidden">Наш адрес</h3>
       <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
       <div class="contacts_map">
         <img src="http://placehold.it/320x400" width="320" height="400" alt="карта с нашей адресной меткой">
@@ -316,5 +321,6 @@
     </section>
   </footer>
 
-  </body>
+</body>
+
 </html>
