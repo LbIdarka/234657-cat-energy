@@ -1,0 +1,31 @@
+.example {
+  min-height: 705px;
+  margin-top: 42px;
+  background-color: $secondary-bg-color;
+}
+
+.example__title {
+  @include section-title();
+}
+
+.example__text {
+  font-size: 14px;
+}
+
+.example-item__data {
+  @include section-subtitle();
+  text-transform: uppercase;
+}
+
+.example-item__label {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__total {
+  font-family: $font-head;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-title;
+  text-transform: uppercase;
+}

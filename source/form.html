@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/preview/form-mob.jpg");
+    }
+
+    /* Планшет */
+
+    @media ( min-width: 760px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/760.png");
+      }
+    }
+
+    /* Десктоп */
+
+    @media ( min-width: 960px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/960.png");
+      }
+    }
+  </style>
+  <link href="img/preview/pixel-glass/styles.css" rel="stylesheet">
+  <script src="img/preview/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+</head>
+
+<body>
 
   <header class="page-header">
     <a href="index.html" class="page-header__logo">
@@ -28,19 +62,21 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__desc">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+    <header class="page-main__header">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </header>
 
     <form class="page-main__form  form" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Анкета для подбора индивидуальной программы</h2>
       <fieldset class="form__section">
         <legend class="form__subtitle  visually-hidden">Данные кота</legend>
         <label for="name">Имя:*</label>
-        <input type="text" name="name" id="name" placeholder="Барсик" required>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
         <label for="weight">Вес (кг):*</label>
-        <input type="number" name="weight" id="weight" placeholder="7" required>
+        <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
         <label for="age">Возраст (лет):</label>
-        <input type="number" name="age" id="age" placeholder="7">
+        <input class="form__input" type="number" name="age" id="age" placeholder="7">
       </fieldset>
 
       <fieldset class="form__section">
@@ -63,21 +99,21 @@
 
       <fieldset class="form__section">
         <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label for="email">E-mail:*</label>
-              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-            </li>
-            <li class="form__item">
-              <label for="tel">Телефон:*</label>
-              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-            </li>
-          </ul>
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="email">E-mail:*</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </li>
+          <li class="form__item">
+            <label for="tel">Телефон:*</label>
+            <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="form__section">
         <legend class="form__subtitle">Комментарий</legend>
-        <textarea name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__textarea" name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__section">
@@ -115,7 +151,7 @@
     <section class="page-footer__contacts  contacts">
       <h3 class="visually-hidden">Наш адрес</h3>
       <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
       <div class="contacts_map">
         <img src="http://placehold.it/320x400" width="320" height="400" alt="карта с нашей адресной меткой">
@@ -148,5 +184,6 @@
     </section>
   </footer>
 
-  </body>
+</body>
+
 </html>

@@ -1,0 +1,14 @@
+.slider {
+  min-height: 365px;
+}
+
+.slider__slide:last-child {
+  display: none;
+}
+
+.slider__controls {
+  font-family: $font-head;
+  line-height: 20px;
+  color: $color-title;
+  text-transform: uppercase;
+}

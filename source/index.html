@@ -3,12 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Pixel Glass -->
+  <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/preview/index-mob.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/760.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/960.png" );
+        }
+      }
+    </style>
+    <link href="img/preview/pixel-glass/styles.css" rel="stylesheet">
+    <script src="img/preview/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
+      <img src="img/logo-mobile-header.svg" width="101" height="18" alt="CAT ENERGY">
     </a>
 
     <nav class="main-nav">
@@ -29,12 +57,14 @@
 
   <main class="page-main">
     <div class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <div class="promo__img">
-        <img src="http://placehold.it/280x270" width="280" height="270" alt="Пример нашего функционального питания со вкусом курицы">
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <div class="promo__img">
+          <img src="http://placehold.it/280x270" width="280" height="270" alt="Пример нашего функционального питания со вкусом курицы">
+        </div>
+        <a href="#" class="promo__link  btn  btn--index">Подобрать программу</a>
       </div>
-      <a href="#" class="promo__link">Подобрать программу</a>
     </div>
 
     <section class="programs">
@@ -90,7 +120,7 @@
             <img src="http://placehold.it/251x240" width="251" height="240" alt="кот после приема Cat Energy">
           </div>
         </div>
-        <div class="slider_controls">
+        <div class="slider__controls">
           <label for="toggle">Было</label>
           <label for="toggle">Стало</label>
         </div>
@@ -102,9 +132,11 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <section class="page-footer__contacts  contacts  contacts--bg">
-      <h3 class="visually-hidden">Наш адрес</h3>
-      <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <h3 class="visually-hidden">Наш адрес</h3>
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      </div>
 
       <div class="contacts_map">
         <img src="http://placehold.it/320x400" width="320" height="400" alt="карта с нашей адресной меткой">

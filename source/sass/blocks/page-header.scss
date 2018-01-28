@@ -1,0 +1,33 @@
+.page-header {
+  position: relative;
+  min-height: 264px;
+}
+
+.page-header__logo {
+  @include container ();
+  position: relative;
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 33px;
+    height: 40px;
+    background-image: url("../../img/icon-logo-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

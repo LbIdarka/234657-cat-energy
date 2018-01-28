@@ -1,0 +1,10 @@
+.copyright {
+  @include container;
+  min-height: 78px;
+}
+
+.copyright__link {
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+}

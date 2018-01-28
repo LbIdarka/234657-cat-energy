@@ -1,0 +1,26 @@
+.page-main {
+  min-height: 2206px;
+}
+
+.page-main__title {
+  @include section-title ();
+  margin: 0;
+  margin-top: 18px;
+}
+
+.page-main__header {
+  @include container ();
+}
+
+.page-main__desc {
+  margin: 0;
+  margin-top: 15px;
+  font-family: $font-head;
+  font-size: 14px;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.page-main__form {
+  margin-top: 35px;
+}
