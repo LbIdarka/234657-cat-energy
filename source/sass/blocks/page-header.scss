@@ -1,5 +1,14 @@
 .page-header {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    background-image: linear-gradient(to right, #ffffff 52.7%, $primary-bg-color 52.7%); /* 460px/1440px */
+  }
 }
 
 .page-header__logo {
@@ -28,34 +37,23 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    padding-top: 42px;
-  }
-
-  .page-header__top {
-    @include container ();
-    display: flex;
-  }
-
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     width: 192px;
     padding: 0;
     padding-left: 90px;
     border: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    padding-top: 72px;
-    background-image: linear-gradient(to right, #ffffff 52.7%, $primary-bg-color 52.7%); /* 460px/1440px */
-  }
-
-  .page-header__logo {
+  @media (min-width: $desktop-width) {
     width: 245px;
     padding-left: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__top {
+    @include container ();
+    display: flex;
   }
 }
