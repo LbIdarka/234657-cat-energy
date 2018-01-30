@@ -5,6 +5,7 @@
   background-size: contain;
 
   @media (min-width: $tablet-width) {
+    min-height: 884px;
     padding-left: 88px;
     color: inherit;
     background-color: #ffffff;
@@ -12,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 560px;
     margin-top: 30px;
     padding: 0;
     padding-bottom: 50px;
@@ -23,6 +25,7 @@
   @include container ();
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -81,14 +84,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 77px;
-    margin-top: -64px;
-    order: 4;
+    position: absolute;
+    top: 275px;
+    left: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 479px;
-    margin-top: -354px;
+    top: 0;
+    left: 560px;
   }
 }
 
