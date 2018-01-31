@@ -1,10 +1,9 @@
 .example {
-  min-height: 705px;
   margin-top: 42px;
   background-color: $secondary-bg-color;
 
   @media (min-width: $tablet-width) {
-    min-height: 1081px; /* для сетки */
+    min-height: 1033px; /* для сетки */
     display: flex;
     flex-wrap: wrap;
   }

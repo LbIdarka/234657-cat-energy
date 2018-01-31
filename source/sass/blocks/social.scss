@@ -1,4 +1,22 @@
 .social {
-  @include container;
   min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 364px;
+    margin: 0 auto;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  width: 25px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
