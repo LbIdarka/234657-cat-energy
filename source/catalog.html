@@ -20,7 +20,7 @@
     @media ( min-width: 760px) {
       HTML {
         /* Планшетный макет */
-        background-image: url("img/760.png");
+        background-image: url("img/preview/cat-energy-catalog-tablet.jpg");
       }
     }
 
@@ -29,7 +29,7 @@
     @media ( min-width: 960px) {
       HTML {
         /* Десктопный макет */
-        background-image: url("img/960.png");
+        background-image: url("img/preview/cat-energy-catalog-desktop.jpg");
       }
     }
   </style>
@@ -41,24 +41,26 @@
 <body>
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
-    </a>
+    <div class="page-header__top">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
