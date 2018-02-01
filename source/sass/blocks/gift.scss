@@ -1,11 +1,29 @@
 .gift {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px 0 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: auto;
+    margin-top: 90px;
+  }
+}
+
+.gift__text {
   min-height: 289px;
+  margin: 0;
+  line-height: 1.2;
   color: #ffffff;
   background-color: $primary-bg-color;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
+  background-size: cover;
 
-.gift__text {
-  line-height: 1.2;
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    background-position-y: 63%;
+  }
 }

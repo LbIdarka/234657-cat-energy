@@ -1,17 +1,74 @@
 .extra {
-  margin-top: 32px;
+  @include container ();
+  margin-top: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.extra__list {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    margin-top: 90px;
+  }
+}
+
+.extra-item {
+  min-height: 128px;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 139px;
+    padding: 28px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-height: 89px;
+    padding: 23px 0;
+  }
 }
 
 .extra__title {
   @include section-subtitle ();
   font-family: $font-head;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .extra-item__detals {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 14px;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    & tbody {
+      width: 228px;
+      margin-left: auto;
+    }
+  }
 }
 
 .extra-item__title {
@@ -20,4 +77,9 @@
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+    text-align: left;
+  }
 }
