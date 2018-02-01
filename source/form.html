@@ -71,17 +71,23 @@
 
     <form class="page-main__form  form" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Анкета для подбора индивидуальной программы</h2>
-      <fieldset class="form__section">
+      <fieldset class="form__section  form-introduce">
         <legend class="form__subtitle  visually-hidden">Данные кота</legend>
-        <label for="name">Имя:*</label>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
-        <label for="weight">Вес (кг):*</label>
-        <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
-        <label for="age">Возраст (лет):</label>
-        <input class="form__input" type="number" name="age" id="age" placeholder="7">
+        <div class="form__inner">
+          <label for="name">Имя:*</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+        </div>
+        <div class="form__inner">
+          <label for="weight">Вес (кг):*</label>
+          <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
+        </div>
+        <div class="form__inner">
+          <label for="age">Возраст (лет):</label>
+          <input class="form__input" type="number" name="age" id="age" placeholder="7">
+        </div>
       </fieldset>
 
-      <fieldset class="form__section">
+      <fieldset class="form__section  form-program">
         <legend class="form__subtitle  visually-hidden">Выбор программы</legend>
         <ul class="form__list">
           <li class="form__item">
@@ -99,41 +105,41 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form__section">
+      <fieldset class="form__section  form-contacts">
         <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-        <ul class="form__list">
-          <li class="form__item">
+        <ul class="form__list  form-contacts__list">
+          <li class="form-contacts__item">
             <label for="email">E-mail:*</label>
             <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li class="form__item">
+          <li class="form-contacts__item">
             <label for="tel">Телефон:*</label>
             <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__section">
+      <fieldset class="form__section  form-comment">
         <legend class="form__subtitle">Комментарий</legend>
         <textarea class="form__textarea" name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__section">
+      <fieldset class="form__section form-more">
         <legend class="form__subtitle">Дополнительно</legend>
-        <ul class="form__list">
-          <li class="form__item">
+        <ul class="form__list  form-more__list">
+          <li class="form-more__item">
             <input type="checkbox" name="sweetener" id="sweetener" checked>
             <label for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="form__item">
+          <li class="form-more__item">
             <input type="checkbox" name="water" id="water">
             <label for="water">Питьевая вода</label>
           </li>
-          <li class="form__item">
+          <li class="form-more__item">
             <input type="checkbox" name="milk" id="milk">
             <label for="milk">Молоко</label>
           </li>
-          <li class="form__item">
+          <li class="form-more__item">
             <input type="checkbox" name="vitamins" id="vitamins">
             <label for="vitamins">Витамины</label>
           </li>
