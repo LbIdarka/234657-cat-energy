@@ -25,11 +25,12 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 84px;
+    top: 50%;
     left: 106px;
     width: 570px;
     justify-content: space-between;
     background-color: #ffffff;
+    transform: translateY(-50%);
   }
 }
 
