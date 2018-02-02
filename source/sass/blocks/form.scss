@@ -12,11 +12,11 @@
   }
 }
 
-.form__section {
+.form__group {
   width: 100%;
 }
 
-.form__inner {
+.form__group-inner {
   margin-top: 18px;
   display: flex;
   justify-content: space-between;
@@ -89,9 +89,9 @@
 }
 
 
-/* ======== FORM-INTRODUCE ======= */
+/* ======== GROUP-INTRODUCE ======= */
 
-.form-introduce {
+.group-introduce {
   min-height: 178px;
   padding: 0 16px;
 
@@ -107,9 +107,9 @@
 }
 
 
-/* ======== FORM-PROGRAM ======= */
+/* ======== GROUP-PROGRAM ======= */
 
-.form-program {
+.group-program {
   min-height: 158px;
 
   @media (min-width: $tablet-width) {
@@ -127,9 +127,9 @@
 }
 
 
-/* ======== FORM-CONTACTS ======= */
+/* ======== GROUP-CONTACTS ======= */
 
-.form-contacts {
+.group-contacts {
   min-height: 244px;
 
   @media (min-width: $tablet-width) {
@@ -143,23 +143,23 @@
   }
 }
 
-.form-contacts__list {
+.group-contacts__list {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.form-contacts__item {
+.group-contacts__item {
   @media (min-width: $desktop-width) {
     width: 570px;
   }
 }
 
 
-/* ======== FORM-COMMENT ======= */
+/* ======== GROUP-COMMENT ======= */
 
-.form-comment {
+.group-comment {
   min-height: 238px;
   width: 100%;
 
@@ -170,9 +170,9 @@
 }
 
 
-/* ======== FORM-MORE ======= */
+/* ======== GROUP-MORE ======= */
 
-.form-more {
+.group-more {
   min-height: 216px;
 
   @media (min-width: $tablet-width) {
@@ -185,13 +185,13 @@
   }
 }
 
-.form-more__list {
+.group-more__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.form-more__item {
+.group-more__item {
   @media (min-width: $tablet-width) {
     width: 324px;
   }
