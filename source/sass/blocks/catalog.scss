@@ -83,6 +83,11 @@
   text-transform: uppercase;
 }
 
+.catalog-item__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .catalog-item__text {
   font-size: 12px;
   line-height: 16px;
