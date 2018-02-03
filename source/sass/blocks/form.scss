@@ -28,6 +28,7 @@
 
 .form__subtitle {
   @include section-subtitle ();
+  text-transform: none;
 }
 
 .form__input {
