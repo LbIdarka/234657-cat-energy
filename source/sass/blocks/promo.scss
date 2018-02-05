@@ -6,7 +6,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 884px;
-    padding-left: 88px;
     color: inherit;
     background-color: #ffffff;
     background-image: none;
@@ -29,6 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +43,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 430px;
@@ -54,6 +55,7 @@
   @media (min-width: $desktop-width) {
     width: 575px;
     padding-top: 83px;
+    text-align: left;
   }
 }
 

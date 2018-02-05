@@ -1,9 +1,13 @@
 .example {
   margin-top: 42px;
   background-color: $secondary-bg-color;
+}
+
+.example__wrapper {
+  @include container ();
 
   @media (min-width: $tablet-width) {
-    min-height: 1033px; /* для сетки */
+    min-height: 1080px; /* для сетки */
     display: flex;
     flex-wrap: wrap;
   }
@@ -15,8 +19,6 @@
 }
 
 .example__desc {
-  @include container ();
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +41,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  text-align: center;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -47,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    text-align: left;
   }
 }
 
@@ -69,10 +73,15 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-title;
+  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 192px;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
