@@ -20,7 +20,9 @@
   padding: 24px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 68px 72px;
+    width: 708px;
+    margin: 0 auto;
+    padding: 65px 40px 60px;
   }
 
   @media (min-width: $desktop-width) {
