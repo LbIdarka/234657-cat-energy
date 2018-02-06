@@ -44,14 +44,35 @@
 
 .programs__title {
   @include section-subtitle ();
+  position: relative;
+  margin: 0;
+  margin-top: 14px;
+  padding-left: 71px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-bg-color;
+  }
 }
 
 .programs__desc {
+  margin: 0;
+  margin-top: 37px;
+  padding-bottom: 22px;
   font-size: 14px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
+  display: block;
+  margin-top: 18px;
   font-family: $font-head;
   line-height: 16px;
   color: $color-title;
