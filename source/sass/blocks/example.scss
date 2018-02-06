@@ -1,7 +1,32 @@
 .example {
-  min-height: 705px;
   margin-top: 42px;
   background-color: $secondary-bg-color;
+}
+
+.example__wrapper {
+  @include container ();
+
+  @media (min-width: $tablet-width) {
+    min-height: 1080px; /* для сетки */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 635px; /* для сетки */
+    margin-top: 17px;
+  }
+}
+
+.example__desc {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .example__title {
@@ -10,6 +35,27 @@
 
 .example__text {
   font-size: 14px;
+}
+
+.example__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 384px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.example-item {
+  width: 50%;
 }
 
 .example-item__data {
@@ -27,5 +73,15 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-title;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 192px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }

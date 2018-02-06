@@ -1,11 +1,45 @@
 .programs {
-  min-height: 505px;
+  @include container ();
+  min-height: 505px; /* для сетки */
   margin-top: 22px;
+
+  @media (min-width: $desktop-width) {
+    min-height: auto; /* для сетки */
+    margin-top: 80px;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
+  min-height: 266px; /* для сетки */
+  margin-bottom: 20px;
   padding: 22px 20px;
   background-color: $secondary-bg-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 370px; /* для сетки */
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-bottom: 0;
+  }
 }
 
 .programs__title {

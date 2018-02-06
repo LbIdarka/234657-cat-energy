@@ -1,5 +1,14 @@
 .slider {
   min-height: 365px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .slider__slide:last-child {

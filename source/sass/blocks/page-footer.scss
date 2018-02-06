@@ -1,8 +1,29 @@
 .page-footer {
-  min-height: 714px;
+  min-height: 664px;
   background-color: $secondary-bg-color;
 }
 
 .page-footer__logo {
   display: block;
+  padding: 33px 0 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 0;
+  }
+}
+
+.page-footer__inner {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 64px 0 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 40px;
+  }
 }

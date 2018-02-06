@@ -17,19 +17,19 @@
 
     /* Планшет */
 
-    @media ( min-width: 760px) {
+    @media ( min-width: 768px) {
       HTML {
         /* Планшетный макет */
-        background-image: url("img/760.png");
+        background-image: url("img/preview/cat-energy-catalog-tablet.jpg");
       }
     }
 
     /* Десктоп */
 
-    @media ( min-width: 960px) {
+    @media ( min-width: 1300px) {
       HTML {
         /* Десктопный макет */
-        background-image: url("img/960.png");
+        background-image: url("img/preview/cat-energy-catalog-desktop.jpg");
       }
     }
   </style>
@@ -41,28 +41,33 @@
 <body>
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
-    </a>
+    <div class="page-header__top">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <header class="page-main__header">
+      <h1 class="page-main__title">Каталог продукции</h1>
+    </header>
+
     <section class="catalog">
       <h2 class="visually-hidden">Наши популярные товары</h2>
       <ul class="catalog__list">
@@ -71,7 +76,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy PRO 500 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy PRO 500 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -85,7 +92,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item">
@@ -93,7 +100,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy PRO 1000 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy PRO 1000 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -107,7 +116,7 @@
               <td>1000 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item">
@@ -115,7 +124,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy PRO 500 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy PRO 500 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -129,7 +140,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item">
@@ -137,7 +148,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  PRO 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy PRO 1000 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy PRO 1000 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -151,7 +164,7 @@
               <td>1000 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item">
@@ -159,7 +172,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy Slim 500 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy Slim 500 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -173,7 +188,7 @@
               <td>400 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item">
@@ -181,7 +196,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 1000 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy Slim 1000 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy Slim 1000 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -195,7 +212,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item catalog-item">
@@ -203,7 +220,9 @@
             <img src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy  Slim 500 г">
           </a>
           <table class="catalog-item__detals">
-            <caption class="catalog-item__title">Cat Energy Slim 500 г</caption>
+            <caption class="catalog-item__title">
+              <a href="#" class="catalog-item__link">Cat Energy Slim 500 г</a>
+            </caption>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -217,13 +236,13 @@
               <td>500 Р.</td>
             </tr>
           </table>
-          <a href="#" class="catalog-item__link  btn">Заказать</a>
+          <a href="#" class="catalog-item__btn  btn">Заказать</a>
         </li>
 
         <li class="catalog__item  catalog-item  catalog-item--more">
           <p class="catalog-item__title">Показать еще 100500 товаров</p>
           <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="catalog-item__link  btn  btn--more">Показать все</a>
+          <a href="#" class="catalog-item__btn  btn  btn--more">Показать все</a>
         </li>
       </ul>
     </section>
@@ -232,93 +251,96 @@
       <h2 class="extra__title">Дополнительные товары</h2>
       <ul class="extra__list">
         <li class="extra__item  extra-item">
-          <table class="extra-item__detals">
-            <caption class="extra-item__title">Сахарозаменитель</caption>
-            <tr>
-              <td>1 Упаковка</td>
-              <td>100 Р.</td>
-            </tr>
-          </table>
+          <h3 class="extra-item__title">Сахарозаменитель</h3>
+          <p class="extra-item__detals">
+            <span class="extra-item__text  extra-item__text--unit">1 Упаковка</span>
+            <span class="extra-item__text  extra-item__text--price">100 Р.</span>
+          </p>
           <a href="#" class="extra-item__link  btn">Заказать</a>
         </li>
 
         <li class="extra__item  extra-item">
-          <table class="extra-item__detals">
-            <caption class="extra-item__title">Питьевая вода</caption>
-            <tr>
-              <td>5 литров</td>
-              <td>50 Р.</td>
-            </tr>
-          </table>
+            <h3 class="extra-item__title">Питьевая вода</h3>
+            <p class="extra-item__detals">
+              <span class="extra-item__text  extra-item__text--unit">5 литров</span>
+              <span class="extra-item__text  extra-item__text--price">50 Р.</span>
+            </p>
           <a href="#" class="extra-item__link  btn">Заказать</a>
         </li>
 
         <li class="extra__item  extra-item">
-          <table class="extra-item__detals">
-            <caption>Молоко</caption>
-            <tr>
-              <td>1 литр</td>
-              <td>100 Р.</td>
-            </tr>
-          </table>
+            <h3 class="extra-item__title">Молоко</h3>
+            <p class="extra-item__detals">
+              <span class="extra-item__text  extra-item__text--unit">1 литр</span>
+              <span class="extra-item__text  extra-item__text--price">100 Р.</span>
+            </p>
           <a href="#" class="extra-item__link  btn">Заказать</a>
         </li>
 
         <li class="extra__item  extra-item">
-          <table class="extra-item__detals">
-            <caption class="extra-item__title">Витамины</caption>
-            <tr>
-              <td>1 упаковка (30 г) </td>
-              <td>300 Р.</td>
-            </tr>
-          </table>
+            <h3 class="extra-item__title">Витамины</h3>
+            <p class="extra-item__detals">
+              <span class="extra-item__text  extra-item__text--unit">1 упаковка (30 г)</span>
+              <span class="extra-item__text  extra-item__text--price">300 Р.</span>
+            </p>
           <a href="#" class="extra-item__link  btn">Заказать</a>
         </li>
       </ul>
+      <section class="gift">
+        <h2 class="visually-hidden">Акция</h2>
+        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+      </section>
     </section>
 
-    <section class="gift">
-      <h2 class="visually-hidden">Акция</h2>
-      <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
   </main>
 
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <section class="page-footer__contacts  contacts">
-      <h3 class="visually-hidden">Наш адрес</h3>
-      <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <h3 class="visually-hidden">Наш адрес</h3>
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
 
-      <div class="contacts_map">
-        <img src="http://placehold.it/320x400" width="320" height="400" alt="карта с нашей адресной меткой">
+      <div class="contacts__map">
+        <img  class="contacts__map-img" src="http://placehold.it/320x400" width="320" height="400" alt="карта с нашей адресной меткой">
       </div>
     </section>
 
-    <a href="index.html" class="page-footer__logo">
-      <img src="http://placehold.it/128x24" alt="логотип Cat Energy">
-    </a>
-
-    <section class="page-footer__social  social">
-      <h3 class="visually-hidden">Мы в соц.сетях</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="#" class="social__link">Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">Инстаграм</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">Фейсбук</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-footer__copyright  copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
-        <img src="http://placehold.it/27x34" width="27" height="34" alt="логотип HTML Academy">
+    <div class="page-footer__inner">
+      <a href="index.html" class="page-footer__logo">
+        <img src="http://placehold.it/128x24" alt="логотип Cat Energy">
       </a>
-    </section>
+
+      <section class="page-footer__social  social">
+        <h3 class="visually-hidden">Мы в соц.сетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="page-footer__copyright  copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="логотип HTML Academy">
+        </a>
+      </div>
+    </div>
   </footer>
 
 </body>
