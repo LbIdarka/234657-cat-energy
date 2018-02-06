@@ -1,5 +1,5 @@
 .example {
-  margin-top: 42px;
+  margin-top: 34px;
   background-color: $secondary-bg-color;
 }
 
@@ -31,18 +31,25 @@
 
 .example__title {
   @include section-title();
+  margin: 0;
+  padding-top: 17px;
 }
 
 .example__text {
+  margin: 0;
+  margin-top: 23px;
+  padding-right: 5px;
   font-size: 14px;
 }
 
 .example__list {
   display: flex;
   margin: 0;
+  margin-top: 25px;
   padding: 0;
   text-align: center;
   list-style: none;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 384px;
@@ -55,20 +62,33 @@
 }
 
 .example-item {
-  width: 50%;
+  width: 123px;
 }
 
 .example-item__data {
   @include section-subtitle();
+  display: block;
+  padding: 13px 13px 17px;
   text-transform: uppercase;
+  border: 1px solid #cfcfcf;
 }
 
 .example-item__label {
+  width: 90px;
+  margin: 0 auto;
+  margin-top: -8px;
   font-size: 12px;
   line-height: 12px;
+  background-color: #f2f2f2;
+
+  &--width {
+    width: 110px;
+  }
 }
 
 .example__total {
+  margin: 0;
+  margin-top: 18px;
   font-family: $font-head;
   font-size: 14px;
   line-height: 20px;
