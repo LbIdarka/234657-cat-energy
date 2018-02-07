@@ -1,5 +1,6 @@
 .slider {
-  min-height: 365px;
+  position: relative;
+  margin-top: 43px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -11,13 +12,68 @@
   }
 }
 
-.slider__slide:last-child {
+.slider__slide {
+  height: 240px;
+  vertical-align: top;
+}
+
+.slider__slide--before {
   display: none;
 }
 
+.slider__toggle {
+  @include input-hidden;
+}
+
 .slider__controls {
+  position: relative;
+  margin-top: 24px;
+  padding: 0 39px 0 43px;
   font-family: $font-head;
   line-height: 20px;
   color: $color-title;
   text-transform: uppercase;
+}
+
+.slider__controls-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider__controls-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 100px;
+  width: 84px;
+  height: 14px;
+  outline: none;
+  background: white;
+  border: 1px solid #cdcdcd;
+  border-radius: 30px;
+}
+
+.slider__controls-label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 144px;
+  width: 37px;
+  height: 6px;
+  background: $primary-bg-color;
+  border: 1px solid #cdcdcd;
+  border-radius: 30px;
+}
+
+.slider__toggle:checked ~ .slider__slide--before {
+  display: block;
+}
+
+.slider__toggle:checked ~ .slider__slide--after {
+  display: none;
+}
+
+.slider__toggle:checked ~ .slider__controls .slider__controls-label::after {
+  left: 105px;
 }

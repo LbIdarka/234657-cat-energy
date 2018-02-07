@@ -57,3 +57,11 @@
     opacity: 1;
   }
 }
+
+@mixin input-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

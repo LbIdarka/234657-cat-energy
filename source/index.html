@@ -117,18 +117,16 @@
         </div>
 
         <div class="example__slider  slider">
-          <input type="checkbox" name="toggle" id="toggle" checked>
           <div class="slider__inner">
-            <div class="slider__slide">
-              <img src="http://placehold.it/311x232" width="311" height="232" alt="кот до приема Cat Energy">
+            <input class="slider__toggle" type="checkbox" name="toggle" id="toggle" checked>
+            <img  class="slider__slide  slider__slide--before" src="http://placehold.it/311x232" width="311" height="232" alt="кот до приема Cat Energy">
+            <img  class="slider__slide  slider__slide--after" src="http://placehold.it/251x240" width="251" height="240" alt="кот после приема Cat Energy">
+            <div class="slider__controls">
+              <label class="slider__controls-label" for="toggle">
+                <span>Было</span>
+                <span>Стало</span>
+              </label>
             </div>
-            <div class="slider__slide">
-              <img src="http://placehold.it/251x240" width="251" height="240" alt="кот после приема Cat Energy">
-            </div>
-          </div>
-          <div class="slider__controls">
-            <label for="toggle">Было</label>
-            <label for="toggle">Стало</label>
           </div>
         </div>
       </div>
