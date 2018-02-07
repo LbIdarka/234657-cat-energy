@@ -1,6 +1,4 @@
 .contacts {
-  min-height: 115px;
-
   &--bg {
     background-color: #ffffff;
   }
@@ -17,7 +15,7 @@
 .contacts__wrapper {
   display: flex;
   width: auto;
-  padding: 24px 20px;
+  padding: 28px 19px 25px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -79,7 +77,8 @@
 }
 
 .contacts__map-img {
-  height: 363px;
+  display: block;
+  height: 364px;
 
   @media (min-width: $tablet-width) {
     height: 396px;

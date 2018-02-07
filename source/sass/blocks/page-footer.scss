@@ -5,8 +5,17 @@
 
 .page-footer__logo {
   display: block;
-  padding: 33px 0 30px;
+  padding: 39px 0 28px;
   text-align: center;
+  border-bottom: $border-bottom;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 162px;

@@ -1,5 +1,6 @@
 .social {
-  min-height: 60px;
+  min-height: 63px;
+  border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
     width: 364px;
