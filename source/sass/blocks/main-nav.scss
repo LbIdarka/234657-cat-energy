@@ -12,7 +12,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 516px;
+    width: 475px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +93,7 @@
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    width: auto;
     margin-left: auto;
     padding: 0;
     border: none;
@@ -127,6 +128,7 @@
     color: #222222;
 
     &--active {
+      padding-bottom: 7px;
       border-bottom: 2px solid $primary-bg-color;
     }
   }
