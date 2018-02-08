@@ -39,6 +39,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 0;
+    padding-top: 63px;
   }
 }
 
@@ -71,6 +72,17 @@
       height: 200px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 161px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 48px;
+      left: 52px;
+    }
+  }
 }
 
 .programs__desc {
@@ -89,6 +101,17 @@
 
     &--width {
       width: 342px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 76px;
+    padding-bottom: 0;
+
+
+    &--width {
+      width: 100%;
     }
   }
 }
@@ -110,5 +133,9 @@
     margin-top: 33px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }
