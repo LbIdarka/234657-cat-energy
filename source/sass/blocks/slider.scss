@@ -1,10 +1,14 @@
 .slider {
-  position: relative;
   margin-top: 43px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    min-height: 565px;
     width: 100%;
+    margin-top: 80px;
+    padding-bottom: 68px;
+    background-image: linear-gradient(to bottom, #ffffff 170px, transparent 170px),
+      linear-gradient(to right, $secondary-bg-color 50%, #eaeaea 50%);
   }
 
   @media (min-width: $desktop-width) {
@@ -12,13 +16,32 @@
   }
 }
 
+.slider__inner {
+  @include container();
+  position: relative;
+}
+
 .slider__slide {
   height: 240px;
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 506px;
+  }
 }
 
 .slider__slide--before {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+  }
 }
 
 .slider__toggle {
@@ -33,12 +56,31 @@
   line-height: 20px;
   color: $color-title;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+    margin: 0 auto;
+    margin-top: 31px;
+    padding: 0;
+    font-size: 20px;
+  }
 }
 
 .slider__controls-label {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    &:hover::after {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::after {
+      border-color: $primary-bg-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .slider__controls-label::before {
@@ -52,6 +94,15 @@
   background: white;
   border: 1px solid #cdcdcd;
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: 69px;
+    width: 429px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
 }
 
 .slider__controls-label::after {
@@ -64,8 +115,37 @@
   background: $primary-bg-color;
   border: 1px solid #cdcdcd;
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    left: 268px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background: #ffffff;
+    background-image: radial-gradient(circle closest-side, $primary-bg-color 4px, #ffffff 4px, #ffffff 11px);
+    border: 1px solid #cecece;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
 }
 
+.slider__controls-text {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bebebe;
+
+    &:hover {
+      border-bottom-color: #989898;
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+/*       Управление слайдами        */
 .slider__toggle:checked ~ .slider__slide--before {
   display: block;
 }
@@ -76,4 +156,35 @@
 
 .slider__toggle:checked ~ .slider__controls .slider__controls-label::after {
   left: 105px;
+
+  @media (min-width: $tablet-width) {
+    left: 268px;
+  }
+}
+
+/*       После мобильной ширины можо использовать модификатор --nojs,
+/*        для работы слайдера без js аналогично мобильному        */
+.slider__toggle--nojs:checked ~ .slider__slide--before {
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.slider__toggle--nojs ~ .slider__slide--before {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle--nojs:checked ~ .slider__controls .slider__controls-label::after {
+  @media (min-width: $tablet-width) {
+    left: 69px;
+  }
+}
+
+.slider__toggle--nojs ~ .slider__controls .slider__controls-label::after {
+  @media (min-width: $tablet-width) {
+    left: 468px;
+  }
 }

@@ -1,14 +1,19 @@
 .example {
-  margin-top: 34px;
+  margin-top: 46px;
   padding-bottom: 35px;
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    background-color: #ffffff;
+    border-top: $border-bottom;
+  }
 }
 
 .example__wrapper {
   @include container ();
 
   @media (min-width: $tablet-width) {
-    min-height: 1080px; /* для сетки */
     display: flex;
     flex-wrap: wrap;
   }
@@ -34,26 +39,45 @@
   @include section-title();
   margin: 0;
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
 }
 
 .example__text {
   margin: 0;
   margin-top: 23px;
-  padding-right: 5px;
+  padding-right: 6px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__stats {
+  width: 100%;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 51px;
+  }
 }
 
 .example__list {
   display: flex;
   margin: 0;
-  margin-top: 25px;
   padding: 0;
   text-align: center;
   list-style: none;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    width: 384px;
+    width: 366px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +88,10 @@
 
 .example-item {
   width: 123px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example-item__data {
@@ -72,6 +100,13 @@
   padding: 13px 13px 17px;
   text-transform: uppercase;
   border: 1px solid #cfcfcf;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-item__label {
@@ -84,6 +119,21 @@
 
   &--width {
     width: 110px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    background: #ffffff;
+
+    &--width {
+      width: 140px;
+    }
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -99,7 +149,11 @@
 
   @media (min-width: $tablet-width) {
     width: 192px;
+    margin-top: 8px;
     margin-left: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
