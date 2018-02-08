@@ -43,7 +43,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 150px;
+    width: 155px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -68,6 +68,13 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+  }
+}
+
+.contacts__adress-city {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
   }
 }
 
