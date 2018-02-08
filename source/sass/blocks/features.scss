@@ -1,6 +1,10 @@
 .features {
   @include container ();
   margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 46px;
+  }
 }
 
 .features__title {
@@ -9,17 +13,17 @@
 }
 
 .features__list {
-  min-height: 306px; /* для сетки */
   margin: 0;
   margin-top: 30px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    min-height: 613px; /* для сетки */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 70px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,9 +37,24 @@
   padding-left: 80px;
   font-size: 14px;
 
+  &--time br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 240px;
-    margin-right: auto;
+    width: 286px;
+    margin-top: 70px;
+    margin-bottom: 61px;
+    margin-right: 39px;
+    padding-left: 0;
+    padding-top: 114px;
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--time br {
+      display: inline-block;
+    }
   }
 
   @media (min-width: $desktop-width) {
