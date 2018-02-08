@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 560px;
-    margin-top: 30px;
+    margin-top: 28px;
     padding: 0;
     padding-bottom: 50px;
     background-color: transparent;
@@ -56,7 +56,7 @@
 
   @media (min-width: $desktop-width) {
     width: 575px;
-    padding-top: 83px;
+    padding-top: 86px;
     text-align: left;
   }
 }
@@ -125,6 +125,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 51px;
+    margin-top: 53px;
+    margin-left: 0;
   }
 }
