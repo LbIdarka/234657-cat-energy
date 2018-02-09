@@ -26,9 +26,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 50%;
-    left: 106px;
+    left: 38px;
     width: 570px;
-    justify-content: space-between;
+    padding-right: 77px;
+    padding-left: 77px;
     background-color: #ffffff;
     transform: translateY(-50%);
   }
@@ -68,6 +69,8 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-left: 85px;
+    text-align: left;
   }
 }
 
@@ -89,6 +92,10 @@
 
   @media (min-width: $tablet-width) {
     height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
 

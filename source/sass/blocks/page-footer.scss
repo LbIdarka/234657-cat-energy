@@ -1,5 +1,4 @@
 .page-footer {
-  min-height: 664px;
   background-color: $secondary-bg-color;
 }
 
@@ -23,6 +22,10 @@
     text-align: left;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+  }
 }
 
 .page-footer__inner {
@@ -35,6 +38,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 40px;
+    padding: 60px 40px 0;
   }
 }
