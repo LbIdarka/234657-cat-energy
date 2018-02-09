@@ -12,7 +12,7 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию показывается мобильный макет */
-      background-image: url("img/preview/catalog-mob.jpg");
+      background-image: url("img/preview/cat-energy-catalog-mobile.jpg");
     }
 
     /* Планшет */
@@ -43,11 +43,13 @@
   <header class="page-header">
     <div class="page-header__top">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/101x18" width="101" height="18" alt="CAT ENERGY">
+        <img src="img/logo-mobile-header.svg" width="101" height="18" alt="CAT ENERGY">
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html" class="main-nav__link">Главная</a>
@@ -240,9 +242,9 @@
         </li>
 
         <li class="catalog__item  catalog-item  catalog-item--more">
-          <p class="catalog-item__title">Показать еще 100500 товаров</p>
+          <p class="catalog-item__title  catalog-item__title--more">Показать еще 100500 товаров</p>
           <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="catalog-item__btn  btn  btn--more">Показать все</a>
+          <a href="#" class="catalog-item__btn  btn  catalog-item__btn--more  btn--more">Показать все</a>
         </li>
       </ul>
     </section>
@@ -288,7 +290,7 @@
       </ul>
       <section class="gift">
         <h2 class="visually-hidden">Акция</h2>
-        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift__text">Закажите все<br> и получите чехол для кота в подарок!</p>
       </section>
     </section>
 
@@ -343,6 +345,7 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
