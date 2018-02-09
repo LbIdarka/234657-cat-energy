@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
 }
 
 .features__title {
@@ -27,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 310px; /* для сетки */
+    justify-content: flex-start;
   }
 }
 
@@ -59,5 +63,11 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-right: 80px;
+    padding-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
