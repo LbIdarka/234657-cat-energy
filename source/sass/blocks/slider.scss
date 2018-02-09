@@ -13,12 +13,20 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-top: 0;
+    background-image: none;
   }
 }
 
 .slider__inner {
   @include container();
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .slider__slide {
@@ -42,6 +50,10 @@
     width: 50%;
     overflow: hidden;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 53%;
+  }
 }
 
 .slider__toggle {
@@ -63,6 +75,11 @@
     margin-top: 31px;
     padding: 0;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 61px;
+    margin-right: 0;
   }
 }
 

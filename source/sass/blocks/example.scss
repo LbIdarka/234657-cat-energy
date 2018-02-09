@@ -9,9 +9,24 @@
     background-color: #ffffff;
     border-top: $border-bottom;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 0;
+    background-image: linear-gradient(to bottom, #ffffff 200px, transparent 200px),
+      linear-gradient(to left, #eaeaea 25%, $secondary-bg-color 25%);
+    border: none;
+  }
 }
 
 .example__wrapper {
+  @media (min-width: $desktop-width) {
+    @include container;
+    display: flex;
+  }
+}
+
+.example__inner {
   @include container ();
 
   @media (min-width: $tablet-width) {
@@ -20,8 +35,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 635px; /* для сетки */
-    margin-top: 17px;
+    width: 50%;
+    padding: 0;
+    align-items: flex-start;
   }
 }
 
@@ -32,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -43,6 +59,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
   }
 }
 
@@ -57,6 +77,11 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 145px;
+    padding-right: 171px;
+  }
 }
 
 .example__stats {
@@ -66,6 +91,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    flex-wrap: wrap;
   }
 }
 
@@ -83,7 +113,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    text-align: left;
+    justify-content: flex-start;
+    text-align: center;
   }
 }
 
@@ -92,6 +123,10 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 43px;
   }
 }
 
@@ -116,7 +151,7 @@
   margin-top: -8px;
   font-size: 12px;
   line-height: 12px;
-  background-color: #f2f2f2;
+  background-color: $secondary-bg-color;
 
   &--width {
     width: 110px;
@@ -135,6 +170,10 @@
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-bg-color;
   }
 }
 
@@ -158,6 +197,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 48px;
     margin-left: 0;
+    text-align: left;
+  }
+}
+
+.example__total-price {
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
   }
 }
