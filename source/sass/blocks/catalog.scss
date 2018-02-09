@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     margin-right: -30px;
     margin-left: -30px;
   }
@@ -32,17 +33,14 @@
   padding: 0 20px;
   border-top: 1px solid #ededed;
 
-  &--more {
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ededed;
-  }
-
   @media (min-width: $tablet-width) {
-    min-height: 560px;
     width: 324px;
-    padding: 108px 39px;
+    padding: 55px 37px 39px;
     margin-right: 30px;
     margin-left: 30px;
+    margin-bottom: 4px;
+    background-image: linear-gradient(to top, $secondary-bg-color 429px, transparent 429px);
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,13 +49,32 @@
     margin-left: 40px;
     padding: 40px 38px;
   }
+
+  &--more {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid $secondary-bg-color;
+    }
+  }
 }
 
 .catalog-item__img-link {
   width: 50%;
 
-  & img {
+  img {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 195px;
+      height: 208px;
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -76,11 +93,9 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 37px;
+    font-size: 16px;
   }
-}
-
-.catalog-item__detals td:last-child {
-  text-align: right;
 }
 
 .catalog-item__title {
@@ -93,17 +108,56 @@
   text-align: left;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
   &--more {
     width: 100%;
     margin: 0;
     padding-top: 80px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 160px;
+      margin-bottom: 19px;
+      padding-top: 109px;
+    }
+  }
+}
+
+.catalog-item__detals tr {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog-item__detals td {
+  &:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
   }
 }
 
 .catalog-item__btn {
   &--more {
     margin-top: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
   }
 }
 
@@ -118,4 +172,10 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    margin-bottom: 58px;
+    font-size: 16px;
+  }
 }
