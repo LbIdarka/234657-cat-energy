@@ -25,13 +25,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
     margin-top: 0;
+    margin-right: -49px;
+    margin-left: -49px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
@@ -49,7 +51,8 @@
     width: 286px;
     margin-top: 70px;
     margin-bottom: 61px;
-    margin-right: 39px;
+    margin-right: 49px;
+    margin-left: 49px;
     padding-left: 0;
     padding-top: 114px;
     padding-right: 40px;
@@ -63,11 +66,8 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-right: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
     padding-right: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
