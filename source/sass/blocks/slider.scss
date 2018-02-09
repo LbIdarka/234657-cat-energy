@@ -56,10 +56,6 @@
   }
 }
 
-.slider__toggle {
-  @include input-hidden;
-}
-
 .slider__controls {
   position: relative;
   margin-top: 24px;
