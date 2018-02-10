@@ -23,4 +23,9 @@
     text-align: left;
     background-position-y: 63%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 187px 42px 45px;
+    text-align: center;
+  }
 }
