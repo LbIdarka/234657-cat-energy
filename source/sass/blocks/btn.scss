@@ -12,11 +12,6 @@
   background-color: $primary-bg-color;
   border: none;
 
-  &--more {
-    color: #222222;
-    background-color: $secondary-bg-color;
-  }
-
   &--index {
     padding: 11px;
     font-size: 14px;
@@ -29,6 +24,19 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--more {
+    color: #222222;
+    background-color: $secondary-bg-color;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
