@@ -137,10 +137,10 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
-    color: #ffffff;
 
-    &--active {
-      border-color: #ffffff;
+    &--revers {
+      color: #ffffff;
+      border-color: inherit;
     }
   }
 }
