@@ -38,15 +38,41 @@
 
 .form__subtitle {
   @include section-subtitle ();
+  margin-left: -20px;
+  padding-left: 20px;
   text-transform: none;
+  background: #ffffff;
 }
 
 .form__input {
   @include placeholder;
-  width: auto;
   flex-grow: 1;
+  width: 172px;
+  padding: 12px 13px;
   font: inherit;
   text-transform: uppercase;
+  border: $border-bottom;
+  border-color: rgba(230, 230, 230, 0.5);
+
+  &:hover {
+    border-color: rgba(230, 230, 230, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid:not(:focus) {
+    outline: 2px solid #ff8282;
+  }
+
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
@@ -297,4 +323,40 @@ input[type="radio"]:disabled + label {
   @media (min-width: $desktop-width) {
     width: 245px;
   }
+}
+
+.group-more__label {
+  position: relative;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 22px;
+  height: 11px;
+  border: 2px solid $primary-bg-color;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(135deg);
+}
+
+input[type="checkbox"]:disabled + label {
+  opacity: 0.3;
 }
