@@ -57,8 +57,10 @@
 }
 
 .page-header__top {
+  @include container ();
+  padding: 0;
+
   @media (min-width: $tablet-width) {
-    @include container ();
     display: flex;
   }
 }

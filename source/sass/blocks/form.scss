@@ -22,8 +22,10 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    @include container ();
     display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
