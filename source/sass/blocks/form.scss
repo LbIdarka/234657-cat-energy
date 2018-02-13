@@ -149,6 +149,10 @@
   list-style: none;
 }
 
+.form__label {
+  display: block;
+}
+
 .form__textarea {
   @include placeholder;
   width: 100%;
