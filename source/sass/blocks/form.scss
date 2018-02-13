@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 35px;
+    padding-left: 40px;
 
     &--reset {
       width: auto;
@@ -395,14 +395,6 @@ input[type="radio"]:disabled + label {
   }
 }
 
-// .group-comment__title {
-//   width: 162px;
-
-//   @media (min-width: $tablet-width) {
-//     width: 255px;
-//   }
-// }
-
 
 /* ======== GROUP-MORE ======= */
 
@@ -416,16 +408,9 @@ input[type="radio"]:disabled + label {
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 128px;
     width: 100%;
-  }
-}
-
-.group-more__title {
-  width: 185px;
-
-  @media (min-width: $tablet-width) {
-    width: 291px;
+    margin-top: 68px;
+    margin-bottom: 18px;
   }
 }
 
@@ -437,6 +422,15 @@ input[type="radio"]:disabled + label {
 
   @media (min-width: $tablet-width) {
     margin-top: 66px;
+    padding-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 1300px;
+    margin-right: -40px;
+    margin-left: -40px;
+    padding-right: 0;
   }
 }
 
@@ -451,6 +445,8 @@ input[type="radio"]:disabled + label {
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
