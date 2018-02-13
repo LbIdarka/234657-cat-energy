@@ -18,14 +18,9 @@
 
 .group-program__list {
   @media (min-width: $tablet-width) {
-    margin-right: -100%;
     padding-left: 30px;
     padding-top: 33px;
-    border: 1px solid #cdcdcd;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
+    border: 1px solid #e6e6e6;
   }
 }
 
