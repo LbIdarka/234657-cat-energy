@@ -1,5 +1,4 @@
 .group-contacts {
-  @include green-line ();
   margin-top: 28px;
 
   @media (min-width: $tablet-width) {
@@ -13,16 +12,16 @@
 }
 
 .group-contacts__list {
-  margin-top: 35px;
+  margin-top: 83px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 77px;
+    margin-top: 113px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 66px;
+    margin-top: 102px;
   }
 }
 

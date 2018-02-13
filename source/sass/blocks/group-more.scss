@@ -1,5 +1,4 @@
 .group-more {
-  @include green-line ();
   margin-top: 26px;
 
   @media (min-width: $tablet-width) {
@@ -18,10 +17,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 64px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 66px;
+    margin-top: 103px;
   }
 
   @media (min-width: $desktop-width) {
