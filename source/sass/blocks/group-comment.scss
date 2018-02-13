@@ -1,6 +1,6 @@
 .group-comment {
+  @include green-line ();
   margin-top: 13px;
-  border-top: 3px solid $primary-bg-color;
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;

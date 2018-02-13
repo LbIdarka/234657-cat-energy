@@ -1,6 +1,6 @@
 .group-contacts {
+  @include green-line ();
   margin-top: 28px;
-  border-top: 3px solid $primary-bg-color;
 
   @media (min-width: $tablet-width) {
     margin-top: 75px;
@@ -9,14 +9,6 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-top: 42px;
-  }
-}
-
-.group-contacts__subtitle {
-  width: 222px;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
   }
 }
 
