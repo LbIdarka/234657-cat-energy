@@ -5,10 +5,6 @@
     &--closed .main-nav__list {
       display: none;
     }
-
-    &--nojs .main-nav__toggle {
-      display: none;
-    }
   }
 
   @media (min-width: $tablet-width) {

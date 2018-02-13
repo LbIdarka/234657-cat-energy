@@ -178,36 +178,3 @@
     left: 268px;
   }
 }
-
-/*       После мобильной ширины можо использовать модификатор --nojs,
-/*        для работы слайдера без js аналогично мобильному        */
-.slider__toggle--nojs:checked ~ .slider__slide--before {
-  @media (min-width: $tablet-width) {
-    position: static;
-    width: 100%;
-  }
-}
-
-.slider__toggle--nojs ~ .slider__slide--before {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.slider__toggle--nojs:checked ~ .slider__slide--after {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.slider__toggle--nojs:checked ~ .slider__controls .slider__controls-label::after {
-  @media (min-width: $tablet-width) {
-    left: 69px;
-  }
-}
-
-.slider__toggle--nojs ~ .slider__controls .slider__controls-label::after {
-  @media (min-width: $tablet-width) {
-    left: 468px;
-  }
-}
