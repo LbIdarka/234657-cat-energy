@@ -73,47 +73,51 @@
 
     <form class="page-main__form  form" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Анкета для подбора индивидуальной программы</h2>
-      <fieldset class="form__group  group-introduce">
-        <div class="form__wrapper">
+      <div class="form__wrapper">
+        <fieldset class="form__group  group-introduce">
           <legend class="form__subtitle  visually-hidden">Данные кота</legend>
-          <div class="form__group-inner">
-            <label class="form__label  group-introduce__label" for="name">Имя:*</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+          <div class="form__group-wrapper  form__group-wrapper--reset">
+            <ul class="form__list  group-introduce__list">
+              <li class="form__group-inner  group-introduce__item">
+                <label class="form__label  group-introduce__label" for="name">Имя:*</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+              </li>
+              <li class="form__group-inner  group-introduce__item">
+                <label class="form__label  group-introduce__label" for="weight">Вес (кг):*</label>
+                <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
+              </li>
+              <li class="form__group-inner  group-introduce__item">
+                <label class="form__label  group-introduce__label" for="age">Возраст (лет):</label>
+                <input class="form__input" type="number" name="age" id="age" placeholder="7">
+              </li>
+            </ul>
           </div>
-          <div class="form__group-inner">
-            <label class="form__label  group-introduce__label" for="weight">Вес (кг):*</label>
-            <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
-          </div>
-          <div class="form__group-inner">
-            <label class="form__label  group-introduce__label" for="age">Возраст (лет):</label>
-            <input class="form__input" type="number" name="age" id="age" placeholder="7">
-          </div>
-        </div>
-      </fieldset>
+        </fieldset>
 
-      <fieldset class="form__group  group-program">
-        <div class="form__wrapper">
+        <fieldset class="form__group  group-program">
           <legend class="form__subtitle  visually-hidden">Выбор программы</legend>
-          <ul class="form__list  group-program__list">
-            <li class="form__item  group-program__item">
-              <input class="visually-hidden" type="radio" name="program" id="slim" checked>
-              <label class="form__label  group-program__label" for="slim">Похудение</label>
-            </li>
-            <li class="form__item  group-program__item">
-              <input class="visually-hidden" type="radio" name="program" id="pro">
-              <label class="form__label  group-program__label" for="pro">Набор массы</label>
-            </li>
-            <li class="form__item  group-program__item">
-              <input class="visually-hidden" type="radio" name="program" id="advice" disabled>
-              <label class="form__label  group-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
+          <div class="form__group-wrapper  form__group-wrapper--reset">
+            <ul class="form__list  group-program__list">
+              <li class="form__item  group-program__item">
+                <input class="visually-hidden" type="radio" name="program" id="slim" checked>
+                <label class="form__label  group-program__label" for="slim">Похудение</label>
+              </li>
+              <li class="form__item  group-program__item">
+                <input class="visually-hidden" type="radio" name="program" id="pro">
+                <label class="form__label  group-program__label" for="pro">Набор массы</label>
+              </li>
+              <li class="form__item  group-program__item">
+                <input class="visually-hidden" type="radio" name="program" id="advice" disabled>
+                <label class="form__label  group-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
 
       <fieldset class="form__group  group-contacts">
-        <div class="form__wrapper">
-          <legend class="form__subtitle  group-contacts__title">Контактные данные (владельца кота)</legend>
+        <legend class="form__subtitle  group-contacts__title">Контактные данные (владельца кота)</legend>
+        <div class="form__group-wrapper">
           <ul class="form__list  group-contacts__list">
             <li class="form__group-inner  group-contacts__item">
               <label class="form__label" for="email">E-mail:*</label>
@@ -128,15 +132,15 @@
       </fieldset>
 
       <fieldset class="form__group  group-comment">
-        <div class="form__wrapper">
-          <legend class="form__subtitle  group-comment__title">Комментарий</legend>
+        <legend class="form__subtitle  group-comment__title">Комментарий</legend>
+        <div class="form__group-wrapper">
           <textarea class="form__textarea" name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
 
       <fieldset class="form__group  group-more">
-        <div class="form__wrapper">
-          <legend class="form__subtitle  group-more__title">Дополнительно</legend>
+        <legend class="form__subtitle  group-more__title">Дополнительно</legend>
+        <div class="form__group-wrapper">
           <ul class="form__list  group-more__list">
             <li class="group-more__item">
               <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked disabled>
