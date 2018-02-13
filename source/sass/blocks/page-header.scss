@@ -56,8 +56,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__top {
+.page-header__top {
+  @media (min-width: $tablet-width) {
     @include container ();
     display: flex;
   }

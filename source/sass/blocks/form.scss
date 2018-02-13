@@ -149,6 +149,14 @@
   }
 }
 
+.form__footer {
+  @media (min-width: $tablet-width) {
+    @include container ();
+    display: flex;
+    align-items: center;
+  }
+}
+
 .form__btn {
   width: 280px;
   margin: 18px auto 17px;
@@ -156,6 +164,7 @@
   @media (min-width: $tablet-width) {
     width: 284px;
     margin: 0;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,6 +192,7 @@
   @media (min-width: $desktop-width) {
     width: 325px;
     margin-left: 80px;
+    text-align: left;
   }
 
   sup {
