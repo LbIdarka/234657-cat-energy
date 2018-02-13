@@ -50,6 +50,7 @@
 .group-more__label {
   position: relative;
   padding-left: 46px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 58px;
