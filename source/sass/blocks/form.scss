@@ -175,8 +175,9 @@
 }
 
 .form__footer {
+  @include container ();
+
   @media (min-width: $tablet-width) {
-    @include container ();
     display: flex;
     align-items: center;
     width: 100%;
@@ -185,7 +186,7 @@
 
 .form__btn {
   width: 280px;
-  margin: 18px auto 17px;
+  margin: 18px 0 17px;
 
   @media (min-width: $tablet-width) {
     width: 284px;
