@@ -81,14 +81,13 @@
   }
 }
 
-.contacts_map {
+.contacts__map {
   width: 100%;
-  margin-top: 28px;
-}
-
-.contacts__map-img {
-  display: block;
   height: 364px;
+  background-color: #fdf7ef;
+  background-image: url("../../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 
   @media (min-width: $tablet-width) {
     height: 396px;
