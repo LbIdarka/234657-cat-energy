@@ -13,7 +13,8 @@
   @media (min-width: $desktop-width) {
     width: 50%;
     margin-top: 0;
-    background-image: linear-gradient(to right, #f2f2f2 53%, #eaeaea 53%);
+    background-image: linear-gradient(to bottom, #ffffff 200px, transparent 200px),
+      linear-gradient(to right, $secondary-bg-color 53%, #eaeaea 53%);
   }
 }
 
