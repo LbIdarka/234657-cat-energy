@@ -33,14 +33,12 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: 413px;
     margin-left: 0;
     padding: 0 37px;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
-    width: 413px;
     margin-left: -40px;
     padding-left: 40px;
     padding-right: 20px;
