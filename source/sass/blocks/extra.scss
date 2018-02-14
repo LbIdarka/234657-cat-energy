@@ -10,22 +10,6 @@
     margin-top: 55px;
     margin-bottom: 85px;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    right: 0;
-    width: 17%;
-    height: 3px;
-    background-color: $primary-bg-color;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-      width: 100%;
-      z-index: -1;
-    }
-  }
 }
 
 .extra__wrapper {
@@ -39,12 +23,19 @@
 
 .extra__title {
   @include section-subtitle ();
+  @include green-line ();
+  display: inline-block;
   margin: 0;
+  margin-left: -20px;
+  padding: 0 20px;
+  vertical-align: top;
   font-family: $font-head;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 413px;
-    padding-left: 37px;
+    margin-left: 0;
+    padding: 0 37px;
     background-color: #ffffff;
   }
 
@@ -52,6 +43,7 @@
     width: 413px;
     margin-left: -40px;
     padding-left: 40px;
+    padding-right: 20px;
   }
 }
 
@@ -176,8 +168,7 @@
 }
 
 .extra__gift {
-  margin-top: 39px;
-  margin-bottom: 35px;
+  margin: 39px 0 35px;
 
   @media (min-width: $tablet-width) {
     margin: 70px 0 78px;
@@ -187,5 +178,6 @@
     margin-left: auto;
     margin-top: 80px;
     margin-bottom: 0;
+    padding: 0;
   }
 }
