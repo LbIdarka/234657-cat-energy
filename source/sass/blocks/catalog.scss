@@ -52,8 +52,25 @@
   }
 
   &--more {
+    position: relative;
     padding-bottom: 24px;
     border-bottom: 1px solid #ededed;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12%;
+      left: 50%;
+      display: block;
+      width: 2px;
+      height: 31px;
+      background-color: #d3d3d3;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
 
     @media (min-width: $tablet-width) {
       display: flex;
