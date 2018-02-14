@@ -195,11 +195,6 @@
     width: 16px;
     height: 2px;
     background: #3e4242;
-
-    @media (min-width: $tablet-width) {
-      left: 132px;
-      top: 9px;
-    }
   }
 
   &::after {
@@ -210,19 +205,15 @@
     display: block;
     border: 6px solid transparent;
     border-left: 7px solid #3e4242;
-
-    @media (min-width: $tablet-width) {
-      left: 148px;
-      top: 4px;
-    }
   }
 
   &:hover::before {
     width: 27px;
+    right: 2px;
   }
 
   &:hover::after {
-    left: 122px;
+    right: -11px;
   }
 
   &:active {
@@ -233,6 +224,27 @@
     margin-top: 33px;
     font-size: 20px;
     line-height: 20px;
+
+
+    &::before {
+      right: 0;
+      top: 9px;
+    }
+
+    &::after {
+      right: -13px;
+      top: 4px;
+    }
+
+
+    &:hover::before {
+      width: 27px;
+      right: -11px;
+    }
+
+    &:hover::after {
+      right: -24px;
+    }
   }
 
   @media (min-width: $desktop-width) {
