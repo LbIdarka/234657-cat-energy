@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     width: 50%;
     margin-top: 0;
-    background-image: none;
+    background-image: linear-gradient(to right, #f2f2f2 53%, #eaeaea 53%);
   }
 }
 
@@ -143,6 +143,10 @@
 }
 
 .slider__controls-text {
+  &--before {
+    margin-right: auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
     border-bottom: 1px dotted #bebebe;
