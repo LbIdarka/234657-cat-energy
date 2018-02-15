@@ -15,6 +15,7 @@
   @media (min-width: $desktop-width) {
     width: 512px;
     margin-left: auto;
+    padding-top: 12px;
   }
 }
 
@@ -137,7 +138,7 @@
     color: #222222;
 
     &--active {
-      padding-bottom: 7px;
+      padding-bottom: 5px;
       border-bottom: 2px solid $primary-bg-color;
     }
   }
