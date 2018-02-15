@@ -15,6 +15,7 @@
         linear-gradient(to right, #ffffff 53%, $primary-bg-color 53%); /* 460px/1440px */
       background-repeat: no-repeat;
       background-position: right 0;
+      background-size: 50%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../../img/index-background-desktop@2x.jpg");
