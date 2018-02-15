@@ -4,11 +4,11 @@
   margin-top: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 85px;
+    margin-top: 81px;
   }
 }
 
@@ -18,7 +18,7 @@
 
 .page-main__desc {
   margin: 0;
-  margin-top: 26px;
+  margin-top: 25px;
   font-family: $font-head;
   font-size: 14px;
   color: $color-title;
@@ -26,14 +26,21 @@
 
   @media (min-width: $tablet-width) {
     width: 342px;
-    margin-top: 70px;
+    margin-top: 56px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-left: 0;
   }
 }
 
 .page-main__form {
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }

@@ -1,45 +1,149 @@
 .form {
-  min-height: 1180px;
+  padding-bottom: 32px;
   font-family: $font-head;
   color: #222222;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    @include container ();
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding-bottom: 72px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 83px;
+  }
+}
+
+.form__wrapper {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
 .form__group {
+  position: relative;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__group-wrapper {
+  @include container ();
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+
+    &--reset {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .form__group-inner {
-  margin-top: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  width: 280px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 48px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 .form__subtitle {
   @include section-subtitle ();
+  @include green-line ();
+  float: left;
+  width: 100%;
+  padding: 0;
   text-transform: none;
+  background: transparent;
+}
+
+.form__subtitle__wrapper {
+  @include container;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__subtitle__text {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #ffffff;
+
+  &--width {
+    width: 222px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .form__input {
   @include placeholder;
-  width: auto;
   flex-grow: 1;
-  font: inherit;
+  width: 172px;
+  padding: 12px 13px;
+  font-family: $font-head;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  border: $border-bottom;
+  border-color: rgba(230, 230, 230, 0.5);
+
+  &:hover {
+    border-color: rgba(230, 230, 230, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  // &:invalid:not(:focus) {
+  //   outline: 2px solid #ff8282;
+  // }
+
+  // &:-moz-submit-invalid {
+  //   box-shadow: none;
+  // }
+
+  // &:-moz-ui-invalid {
+  //   box-shadow: none;
+  // }
 
   @media (min-width: $tablet-width) {
-    margin-left: 23px;
+    min-height: 52px;
+    margin-left: 19px;
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -49,20 +153,45 @@
   list-style: none;
 }
 
+.form__label {
+  display: block;
+}
+
 .form__textarea {
   @include placeholder;
+  width: 100%;
+  min-height: 150px;
+  margin-top: 35px;
+  padding: 13px;
   font: inherit;
   text-transform: uppercase;
+  border: $border-bottom;
+
+  @media (min-width: $tablet-width) {
+    min-height: 173px;
+    margin-top: 77px;
+    padding-left: 18px;
+  }
+}
+
+.form__footer {
+  @include container ();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .form__btn {
-  width: 100%;
-  margin-top: 34px;
-  margin-bottom: 20px;
+  width: 280px;
+  margin: 18px 0 17px;
 
   @media (min-width: $tablet-width) {
-    width: 294px;
-    margin-left: 42px;
+    width: 284px;
+    margin: 0;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,132 +201,30 @@
 }
 
 .form__note {
+  display: inline-block;
+  width: 100%;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+  text-align: center;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
     width: 192px;
-    margin-left: 60px;
+    margin-left: 54px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 325px;
     margin-left: 80px;
-  }
-}
-
-
-/* ======== GROUP-INTRODUCE ======= */
-
-.group-introduce {
-  min-height: 178px;
-  padding: 0 16px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 269px;
-    padding: 0 72px 0 68px;
+    text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    min-height: 196px;
-  }
-}
-
-
-/* ======== GROUP-PROGRAM ======= */
-
-.group-program {
-  min-height: 158px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 197px;
-    margin-left: 40px;
-    margin-top: 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    min-height: 196px;
-    margin-left: auto;
-    margin-top: 0;
-  }
-}
-
-
-/* ======== GROUP-CONTACTS ======= */
-
-.group-contacts {
-  min-height: 244px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 166px;
-    width: 100%;
-    margin-top: 57px;
-  }
-}
-
-.group-contacts__list {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.group-contacts__item {
-  @media (min-width: $desktop-width) {
-    width: 570px;
-  }
-}
-
-
-/* ======== GROUP-COMMENT ======= */
-
-.group-comment {
-  min-height: 238px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    min-height: 275px;
-    margin-top: 65px;
-  }
-}
-
-
-/* ======== GROUP-MORE ======= */
-
-.group-more {
-  min-height: 216px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 128px;
-    width: 100%;
-  }
-}
-
-.group-more__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.group-more__item {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
+  sup {
+    padding-right: 4px;
+    vertical-align: middle;
+    font-size: inherit;
   }
 }

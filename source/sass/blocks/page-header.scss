@@ -7,7 +7,12 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 72px;
-    background-image: linear-gradient(to right, #ffffff 52.7%, $primary-bg-color 52.7%); /* 460px/1440px */
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      background-image: linear-gradient(to right, #ffffff 53%, $primary-bg-color 53%); /* 460px/1440px */
+    }
   }
 }
 
@@ -51,9 +56,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__top {
-    @include container ();
+.page-header__top {
+  @include container ();
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }

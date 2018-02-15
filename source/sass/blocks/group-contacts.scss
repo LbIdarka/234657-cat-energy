@@ -1,0 +1,40 @@
+.group-contacts {
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 42px;
+  }
+}
+
+.group-contacts__list {
+  margin-top: 83px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 102px;
+  }
+}
+
+.group-contacts__item {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.group-contacts__input {
+  margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+}

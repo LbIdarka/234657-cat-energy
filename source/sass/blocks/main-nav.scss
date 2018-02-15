@@ -1,23 +1,85 @@
 .main-nav {
   width: auto;
 
+  @media (max-width: $mobile-width-only) {
+    &--closed .main-nav__list {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    width: 516px;
+    width: 475px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 512px;
     margin-left: auto;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 0;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nojs .main-nav__toggle {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  width: 23px;
+  height: 2px;
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+.nojs .main-nav--closed .main-nav__list {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 10px;
+    width: 25px;
+    height: 2px;
+
+    background-color: #111111;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -36,10 +98,10 @@
   width: auto;
   padding: 21px;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    width: auto;
     margin-left: auto;
     padding: 0;
     border: none;
@@ -47,6 +109,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 10px;
+    text-align: left;
   }
 }
 
@@ -59,14 +122,33 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
     color: #222222;
+
+    &--active {
+      padding-bottom: 7px;
+      border-bottom: 2px solid $primary-bg-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+
+    &--revers {
+      color: #ffffff;
+      border-color: currentColor;
+    }
   }
 }

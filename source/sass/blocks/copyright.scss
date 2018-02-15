@@ -1,9 +1,14 @@
 .copyright {
-  padding: 25px 20px;
+  padding: 21px 0;
 
   @media (min-width: $tablet-width) {
     width: 162px;
     padding: 0;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -14,4 +19,8 @@
   line-height: 16px;
   color: inherit;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

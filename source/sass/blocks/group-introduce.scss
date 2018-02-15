@@ -1,0 +1,24 @@
+.group-introduce {
+  padding-bottom: 8px;
+  border-bottom: $border-bottom;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.group-introduce__label {
+  max-width: 95px;
+  margin-right: 16px;
+  white-space: nowrap;  /* для firefox */
+
+  @media (min-width: $tablet-width) {
+    max-width: 114px;
+    margin-right: 0;
+  }
+}

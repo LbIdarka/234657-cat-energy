@@ -1,0 +1,101 @@
+.group-more {
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 68px;
+    margin-bottom: 18px;
+  }
+}
+
+.group-more__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 64px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    padding-right: 0;
+  }
+}
+
+.group-more__item {
+  width: 100%;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-right: auto;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.group-more__label {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+}
+
+.group-more__input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 22px;
+  height: 11px;
+  border: 2px solid $primary-bg-color;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(135deg);
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: 10px;
+  }
+}
+
+.group-more__input[type="checkbox"]:disabled + label {
+  opacity: 0.3;
+}

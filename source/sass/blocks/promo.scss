@@ -1,8 +1,8 @@
 .promo {
   color: #ffffff;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $primary-bg-color 305px, transparent 305px);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
     min-height: 884px;
@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 560px;
-    margin-top: 30px;
+    margin-top: 28px;
     padding: 0;
     padding-bottom: 50px;
     background-color: transparent;
@@ -38,7 +38,7 @@
 
 .promo__title {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 25px;
   font-family: $font-head;
   font-size: 36px;
   line-height: 36px;
@@ -50,18 +50,19 @@
     padding-top: 72px;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     width: 575px;
-    padding-top: 83px;
+    padding-top: 86px;
     text-align: left;
   }
 }
 
 .promo__slogan {
   margin: 0;
-  padding-top: 15px;
+  padding-top: 25px;
   font-family: $font-head;
   font-size: 14px;
   text-align: center;
@@ -82,7 +83,7 @@
 }
 
 .promo__product {
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -118,11 +119,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 44px;
-    order: 3;
+    margin-left: 2px;
     z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 51px;
+    margin-top: 53px;
+    margin-left: 0;
   }
 }
