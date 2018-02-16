@@ -42,14 +42,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .btn {
-    width: 250px;
-
-    &--big {
-      width: 245px;
-      padding: 16px;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  .btn--big {
+    width: 245px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

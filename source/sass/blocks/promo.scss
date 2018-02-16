@@ -1,11 +1,16 @@
 .promo {
   color: #ffffff;
-  background-image: url("../../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $primary-bg-color 305px, transparent 305px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $primary-bg-color 305px, transparent 305px);
   background-repeat: no-repeat;
   background-position: 50% 0;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    min-height: 884px;
+    min-height: 864px;
     color: inherit;
     background-color: #ffffff;
     background-image: none;
@@ -13,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 560px;
-    margin-top: 28px;
+    margin-top: 18px;
     padding: 0;
     padding-bottom: 50px;
     background-color: transparent;
@@ -47,7 +52,7 @@
 
   @media (min-width: $tablet-width) {
     width: 430px;
-    padding-top: 72px;
+    padding-top: 54px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -88,14 +93,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 275px;
+    top: 255px;
     left: 0;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    left: 560px;
+    top: 7px;
+    left: 490px;
   }
 }
 

@@ -14,7 +14,7 @@
     width: 50%;
     margin-top: 0;
     background-image: linear-gradient(to bottom, #ffffff 200px, transparent 200px),
-      linear-gradient(to right, $secondary-bg-color 53%, #eaeaea 53%);
+      linear-gradient(to right, $secondary-bg-color 53.5%, #eaeaea 53.5%);
   }
 }
 
@@ -30,12 +30,27 @@
 }
 
 .slider__slide {
-  height: 240px;
-  vertical-align: top;
+  display: flex;
+  justify-content: center;
+
+  picture {
+    flex-shrink: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 506px;
+    justify-content: flex-start;
+
+    &--after {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--after {
+      justify-content: center;
+      padding-top: 10px;
+    }
   }
 }
 
@@ -45,20 +60,24 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
-    left: 0;
-    display: block;
-    width: 50%;
+    left: 15px;
+    display: flex;
+    width: 48%;
+    background-image: linear-gradient(to bottom, #ffffff 170px, $secondary-bg-color 170px);
     overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
-    width: 53%;
+    left: -40px;
+    width: 60%;
+    padding-top: 10px;
+    background-image: linear-gradient(to bottom, #ffffff 200px, $secondary-bg-color 200px);
   }
 }
 
 .slider__controls {
   position: relative;
-  margin-top: 33px;
+  margin-top: 29px;
   padding: 0 39px 0 43px;
   font-family: $font-head;
   line-height: 20px;
@@ -68,13 +87,13 @@
   @media (min-width: $tablet-width) {
     width: 570px;
     margin: 0 auto;
-    margin-top: 31px;
+    margin-top: 17px;
     padding: 0;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 61px;
+    margin-top: 35px;
     margin-right: 0;
   }
 }
@@ -164,14 +183,14 @@
 
 /*       Управление слайдами        */
 .slider__toggle:checked ~ .slider__slide--before {
-  display: block;
+  display: flex;
 }
 
 .slider__toggle:checked ~ .slider__slide--after {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
   }
 }
 

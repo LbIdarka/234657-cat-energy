@@ -56,22 +56,42 @@
     background-color: $primary-bg-color;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 50px auto;
+    }
   }
 
   &--use::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &--form::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &--food::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &--time::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -117,7 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 250px;
+    width: 245px;
     margin-right: auto;
     padding-right: 0;
 
@@ -126,11 +146,11 @@
     }
 
     &::after {
-      right: 0;
+      right: -3px;
     }
 
     &:first-child::after {
-      right: 8px;
+      right: 3px;
     }
   }
 }
