@@ -16,6 +16,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// интерактивная карта
 function initialize() {
   var mapOptions = {
     zoom: 17,
