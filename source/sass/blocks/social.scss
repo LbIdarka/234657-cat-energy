@@ -1,11 +1,14 @@
 .social {
-  min-height: 63px;
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
-    width: 364px;
-    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: stretch;
   }
 }
 
@@ -13,12 +16,70 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 22px 0 17px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .social__item {
   width: 25px;
-  margin: 0 auto;
-  padding: 20px 0;
+  margin: 0 14px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 15px;
+  }
+}
+
+.social__link {
+  width: 25px;
+  height: 25px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--inst {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

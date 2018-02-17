@@ -26,13 +26,17 @@
 }
 
 .group-contacts__item {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-right: 7px;
   }
 }
 
 .group-contacts__input {
   margin-left: 10px;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;

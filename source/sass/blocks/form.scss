@@ -126,17 +126,17 @@
     outline: 2px solid #444444;
   }
 
-  // &:invalid:not(:focus) {
-  //   outline: 2px solid #ff8282;
-  // }
+  &--error {
+    outline: 2px solid #ff8282;
+  }
 
-  // &:-moz-submit-invalid {
-  //   box-shadow: none;
-  // }
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
 
-  // &:-moz-ui-invalid {
-  //   box-shadow: none;
-  // }
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -157,6 +157,45 @@
   display: block;
 }
 
+.form__icon {
+  position: absolute;
+  top: auto;
+  right: auto;
+  fill: #222222;
+
+  &--mail {
+    top: 15px;
+    right: 16px;
+    width: 17px;
+    height: 13px;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &--tel {
+    top: 13px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      right: 17px;
+    }
+  }
+}
+
+.form__input:focus + svg {
+  fill: $primary-bg-color;
+}
+
+.form__input--error + svg {
+  fill: #ff8282;
+}
+
 .form__textarea {
   @include placeholder;
   width: 100%;
@@ -166,6 +205,18 @@
   font: inherit;
   text-transform: uppercase;
   border: $border-bottom;
+
+  &:hover {
+    border-color: rgba(230, 230, 230, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 173px;
