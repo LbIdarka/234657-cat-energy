@@ -41,19 +41,19 @@
 
 @mixin placeholder () {
   &::placeholder {
-    color: #444444;
+    color: rgba(68, 68, 68, 0.6);
   }
 
   &::-webkit-input-placeholder {
-    color: #444444;
+    color: rgba(68, 68, 68, 0.6);
   }
 
   &:-ms-input-placeholder {
-    color: #444444;
+    color: rgba(68, 68, 68, 0.6);
   }
 
   &::-moz-placeholder {
-    color: #444444;
+    color: rgba(68, 68, 68, 0.6);
     opacity: 1;
   }
 }
