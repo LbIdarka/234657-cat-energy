@@ -37,6 +37,19 @@
   width: 25px;
   height: 25px;
 
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+
   &--vk {
     width: 22px;
     height: 12px;
@@ -50,19 +63,6 @@
   &--fb {
     width: 10px;
     height: 19px;
-  }
-
-  svg {
-    fill: #666666;
-  }
-
-  &:hover svg,
-  &:focus svg {
-    fill: $primary-bg-color;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -79,22 +79,6 @@
     &--fb {
       width: 14px;
       height: 28px;
-    }
-  }
-}
-
-.social__icon {
-  &--big {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--small {
-      display: none;
-    }
-
-    &--big {
-      display: inline-block;
     }
   }
 }
