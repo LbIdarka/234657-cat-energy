@@ -3,7 +3,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: flex-start;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: stretch;
   }
 }
 
@@ -15,12 +20,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
     align-items: center;
-    padding-bottom: 5px;
+    padding: 0;
   }
 }
 
