@@ -1,14 +1,10 @@
 .copyright {
-  padding: 21px 0;
+  padding: 20px 0;
 
   @media (min-width: $tablet-width) {
     width: 162px;
     padding: 0;
     padding-top: 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
   }
 }
 
@@ -20,7 +16,22 @@
   color: inherit;
   text-decoration: none;
 
+  svg {
+    width: 27px;
+    height: 34px;
+    fill: #666666;
+  }
+
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
   }
 }

@@ -359,29 +359,47 @@
         </p>
       </div>
 
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
     </section>
 
     <div class="page-footer__inner">
-      <a href="index.html" class="page-footer__logo">
-        <img src="http://placehold.it/128x24" alt="логотип Cat Energy">
+      <a class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="логотип Cat Energy">
       </a>
 
       <section class="page-footer__social  social">
         <h3 class="visually-hidden">Мы в соц.сетях</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link  social__link--vk">
+              <svg class="social__icon social__icon--small" width="22" height="12">
+                <use xlink:href="#s-icon-vk-mobile"></use>
+              </svg>
+              <svg class="social__icon social__icon--big" width="30" height="16">
+                <use xlink:href="#s-icon-vk"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link  social__link--inst">
+              <svg class="social__icon social__icon--small" width="16" height="16">
+                <use xlink:href="#s-icon-insta-mobile"></use>
+              </svg>
+              <svg class="social__icon social__icon--big" width="23" height="23">
+                <use xlink:href="#s-icon-insta"></use>
+              </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link  social__link--fb">
+              <svg class="social__icon social__icon--small" width="10" height="19">
+                <use xlink:href="#s-icon-fb-mobile"></use>
+              </svg>
+              <svg class="social__icon social__icon--big" width="14" height="28">
+                <use xlink:href="#s-icon-fb"></use>
+              </svg>
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
@@ -391,9 +409,12 @@
       <div class="page-footer__copyright  copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="логотип HTML Academy">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="#s-icon-htmlacademy"></use>
+          </svg>
         </a>
       </div>
+
     </div>
   </footer>
 

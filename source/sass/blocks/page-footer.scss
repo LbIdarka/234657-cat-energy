@@ -4,7 +4,7 @@
 
 .page-footer__logo {
   display: block;
-  padding: 39px 0 28px;
+  padding: 39px 0 27px;
   text-align: center;
   border-bottom: $border-bottom;
 
@@ -34,10 +34,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 61px 0 23px;
+    justify-content: space-between;
+    padding: 60px 0 23px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 40px 0;
+    padding: 60px 40px 48px;
   }
 }
