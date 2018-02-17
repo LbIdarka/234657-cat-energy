@@ -33,11 +33,11 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(posthtml([
-  include()
-  ]))
-  .pipe(gulp.dest("source"));
-  });
+    .pipe(posthtml([
+    include()
+    ]))
+    .pipe(gulp.dest("source"));
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
