@@ -31,6 +31,7 @@
     <link href="img/preview/pixel-glass/styles.css" rel="stylesheet">
     <script src="img/preview/pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
 
@@ -157,6 +158,10 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <div class="promo__product">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x_result.webp 1x, img/webp/index-can-desktop@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x_result.webp 1x, img/webp/index-can-tablet@2x_result.webp 2x">
+              <source type="image/webp" srcset="img/webp/index-can-mobile@1x_result.webp 1x, img/webp/index-can-mobile@2x_result.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
               <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример нашего функционального питания со вкусом курицы">
@@ -224,6 +229,10 @@
               <input class="slider__toggle  visually-hidden" type="checkbox" name="toggle" id="toggle" checked="">
               <div class="slider__slide  slider__slide--before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x_result.webp 1x, img/webp/before-desktop@2x_result.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x_result.webp 1x, img/webp/before-tablet@2x_result.webp 2x">
+                  <source type="image/webp" srcset="img/webp/before-mobile@1x_result.webp 1x, img/webp/before-mobile@2x_result.webp 2x">
+
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                   <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="кот до приема Cat Energy">
@@ -231,6 +240,10 @@
               </div>
               <div class="slider__slide  slider__slide--after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x_result.webp 1x, img/webp/after-desktop@2x_result.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x_result.webp 1x, img/webp/after-tablet@2x_result.webp 2x">
+                  <source type="image/webp" srcset="img/webp/after-mobile@1x_result.webp 1x, img/webp/after-mobile@2x_result.webp 2x">
+
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                   <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после приема Cat Energy">
