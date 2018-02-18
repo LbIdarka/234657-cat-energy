@@ -138,6 +138,10 @@
     justify-content: flex-start;
     border: 1px solid $secondary-bg-color;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 39px;
+  }
 }
 
 .catalog-item__detals {
