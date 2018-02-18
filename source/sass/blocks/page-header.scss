@@ -9,6 +9,8 @@
     padding-top: 54px;
 
     &--index {
+      background-image: linear-gradient(to right, #ffffff 53.5%, $primary-bg-color 53.5%);
+
       &::before {
         content: "";
         position: absolute;
@@ -16,11 +18,10 @@
         right: 0;
         width: calc(50% - 40px);
         height: 100%;
-        background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 53.5%, $primary-bg-color 53.5%);
+        background-image: url("../img/index-background-desktop@1x.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
-        z-index: -1;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/index-background-desktop@2x.jpg");
@@ -93,5 +94,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
