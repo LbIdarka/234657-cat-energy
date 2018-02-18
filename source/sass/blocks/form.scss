@@ -81,6 +81,7 @@
 
 .form__subtitle__wrapper {
   @include container;
+  display: block;
   padding: 0;
 
   @media (min-width: $desktop-width) {
