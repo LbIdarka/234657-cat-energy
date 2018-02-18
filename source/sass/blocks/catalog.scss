@@ -88,6 +88,11 @@
     @media (min-width: $desktop-width) {
       min-height: 554px;
       padding-top: 121px;
+
+      &::before,
+      &::after {
+        top: 32%;
+      }
     }
   }
 }
