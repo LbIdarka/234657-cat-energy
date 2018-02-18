@@ -14,11 +14,10 @@
 
 .group-introduce__label {
   max-width: 95px;
-  margin-right: 16px;
-  white-space: nowrap;  /* для firefox */
+  margin-right: 14px;
 
   @media (min-width: $tablet-width) {
-    max-width: 114px;
+    max-width: 117px;
     margin-right: 0;
   }
 }

@@ -61,6 +61,7 @@
     position: absolute;
     top: 0;
     left: 15px;
+    max-width: none;
     display: flex;
     width: 48%;
     background-image: linear-gradient(to bottom, #ffffff 170px, $secondary-bg-color 170px);
