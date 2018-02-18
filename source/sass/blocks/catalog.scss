@@ -88,6 +88,11 @@
     @media (min-width: $desktop-width) {
       min-height: 554px;
       padding-top: 121px;
+
+      &::before,
+      &::after {
+        top: 32%;
+      }
     }
   }
 }
@@ -132,6 +137,10 @@
     align-items: center;
     justify-content: flex-start;
     border: 1px solid $secondary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 39px;
   }
 }
 
