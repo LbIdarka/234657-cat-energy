@@ -37,6 +37,10 @@
     flex-shrink: 0;
   }
 
+  img {
+    max-width: none;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
 
@@ -48,8 +52,16 @@
 
   @media (min-width: $desktop-width) {
     &--after {
-      justify-content: center;
+      justify-content: flex-start;
+      min-height: 530px;
       padding-top: 10px;
+      background-image: linear-gradient(to bottom, #ffffff 200px, #eaeaea 200px);
+      transform: translate(-40px);
+      overflow: hidden;
+
+      img {
+        max-width: none;
+      }
     }
   }
 }
@@ -76,6 +88,7 @@
     width: 60%;
     padding-top: 10px;
     background-image: linear-gradient(to bottom, #ffffff 200px, $secondary-bg-color 200px);
+    z-index: 2;
   }
 }
 
