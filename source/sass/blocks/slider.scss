@@ -47,6 +47,10 @@
     &--after {
       display: flex;
       justify-content: flex-end;
+
+      img {
+        max-width: 690px;
+      }
     }
   }
 
@@ -58,10 +62,6 @@
       background-image: linear-gradient(to bottom, #ffffff 200px, #eaeaea 200px);
       transform: translate(-40px);
       overflow: hidden;
-
-      img {
-        max-width: none;
-      }
     }
   }
 }
@@ -71,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 15px;
     display: flex;
     width: 48%;
@@ -79,7 +79,7 @@
     overflow: hidden;
 
     img {
-      max-width: none;
+      max-width: 690px;
     }
   }
 
