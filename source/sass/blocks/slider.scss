@@ -1,6 +1,7 @@
 .slider {
   margin-top: 34px;
   text-align: center;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -98,7 +99,7 @@
 .slider__controls {
   position: relative;
   margin-top: 29px;
-  padding: 0 39px 0 43px;
+  padding: 0 59px 0 63px;
   font-family: $font-head;
   line-height: 20px;
   color: $color-title;
@@ -139,7 +140,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 100px;
+  left: 119px;
   width: 84px;
   height: 14px;
   outline: none;
@@ -161,7 +162,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 144px;
+  left: 160px;
   width: 37px;
   height: 6px;
   background: $primary-bg-color;
@@ -215,7 +216,7 @@
 }
 
 .slider__toggle:checked ~ .slider__controls .slider__controls-label::after {
-  left: 105px;
+  left: 124px;
 
   @media (min-width: $tablet-width) {
     left: 268px;
