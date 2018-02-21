@@ -1,12 +1,12 @@
 .promo {
   color: #ffffff;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $primary-bg-color 305px, transparent 305px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a 305px, transparent 305px);
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a 305px, transparent 305px);
+    background-size: 320px auto, 100%;
   }
 
   @media (min-width: $tablet-width) {

@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     @include container ();
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .catalog__list {
@@ -41,7 +45,8 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-right: auto;
+    margin-right: 40px;
+    margin-left: 40px;
     margin-bottom: 21px;
     padding: 39px 0;
 
